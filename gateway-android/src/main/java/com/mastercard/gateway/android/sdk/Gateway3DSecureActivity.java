@@ -104,7 +104,7 @@ public class Gateway3DSecureActivity extends AppCompatActivity {
     }
 
     void setWebViewHtml(String html) {
-        webView.loadData(html, "text/html", "utf-8");
+        webView.loadDataWithBaseURL(null, html, "text/html", "utf-8", null);
     }
 
     void webViewUrlChanges(Uri uri) {
